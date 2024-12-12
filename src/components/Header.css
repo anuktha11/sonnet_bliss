@@ -1,0 +1,112 @@
+/* Header.css */
+.header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-image: url('./Untitled\ design.png');
+  padding: 10px 20px;
+  z-index: 1000;
+  flex-wrap: wrap; /* Allow wrapping */
+}
+
+.logo-brand-container {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.logo img {
+  width: 70px; /* Decreased size */
+  height: 70px; /* Decreased size */
+  margin-right: 30px; /* Space between logo and brand name */
+}
+
+.brand-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand {
+  margin: 0;
+  font-size: 30px; /* Adjusted size */
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background: linear-gradient(to right, #084c83, #021227);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.slogan {
+  color: black;
+  margin: 0;
+  font-size: 14px;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  margin-left: 15px;
+}
+
+.contact-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.icon-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 20px;
+  color: white;
+  margin-left: 10px;
+}
+
+.whatsapp-btn {
+  background-color: #25D366; /* WhatsApp green */
+}
+
+.call-btn {
+  background-color: #128C7E; /* Darker green for the call button */
+}
+
+.contact-text {
+  color: black;
+  font-size: 14px;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.search-bar {
+  padding: 5px;
+  border: 1px solid #c09a1c;
+  border-radius: 5px;
+  max-width: 200px; /* Ensure the search bar does not grow too large */
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .contact-buttons {
+    margin-top: 10px;
+    width: 100%;
+    justify-content:right /* Spread buttons evenly */
+  }
+
+  .logo-brand-container {
+    margin-bottom: 10px; /* Add space between logo and buttons */
+    width: 100%; /* Ensure full width */
+    justify-content: center; /* Center-align logo and brand info */
+  }
+
+  .search-bar {
+    margin-top: 10px;
+    max-width: 100%; /* Full width on smaller screens */
+  }
+}
